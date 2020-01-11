@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/Kidsfamily1_" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="17dp"
+            android:text=" Warmly Welcome\n \t \t \t From\nChildren&apos;s Village"
+            android:textColor="#ffff0000"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#ffccffcc"
+        android:orientation="horizontal" >
+
+        </LinearLayout> 
+    
+    
+    
+
+     <Button
+         android:id="@+id/Quizbtn"
+         android:layout_width="150dp"
+         android:layout_height="100dp"
+         android:layout_below="@+id/linearLayout1"
+         android:layout_marginLeft="35dp"
+         android:layout_toRightOf="@+id/linearLayout2"
+         android:text="Quiz" />
+
+     <Button
+         android:id="@+id/Animalbtn"
+         android:layout_width="150dp"
+         android:layout_height="100dp"
+         android:layout_above="@+id/Aboutbtn"
+         android:layout_alignLeft="@+id/Quizbtn"
+         android:text="Animals" />
+     
+      <Button
+        android:id="@+id/Aboutbtn"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/Animalbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:text="About" />
+     
+    
+    
+</RelativeLayout>
